@@ -34,8 +34,16 @@ build-backend = "hatchling.build"
 "Bug Tracker" = "https://github.com/Nnonexistent/country-emoji/issues"
 
 
+[tool.hatch.build]
+exclude = [
+    ".gitignore",
+    ".github",
+    "*.code-workspace",
+    ".python-version",
+]
+
 [tool.hatch.version]
-path = "country_emoji/__init__.py"
+path = "src/country_emoji/__init__.py"
 
 
 [tool.isort]
